@@ -1,0 +1,320 @@
+html{
+  text-align:center;
+  min-height: 100%;
+}
+body{
+    background-image: linear-gradient(90deg, rgb(26, 0, 26),black,black, rgb(0, 0, 39));
+    /* background-image: repeating-linear-gradient(45deg,  rgb(20, 1, 20),black, rgb(0, 1, 49),black, rgb(37, 1, 37),black,rgb(1, 1, 44)); */
+}
+
+h1{
+    font-family: 'Roboto Condensed', sans-serif;  
+    display:grid ;
+    color:white;
+    text-align: center;
+    margin-top: 10%;
+    font-size: 80px;
+    transition-duration: 5s;
+    /* animation-iteration-count: 1; */
+    /* animation-name: bajada; */
+
+}
+h1:hover {
+transform: scale(1.6);    
+}
+/* @keyframes bajada {
+    0%{
+            top:0%    }
+           
+        100% {
+          top: 50%;
+        }
+      } */
+.stars {
+    position: absolute;
+    background-color: white;
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    animation-iteration-count: infinite;
+  } 
+    @keyframes twinkle-1 {
+    20% {
+      transform: scale(0.5);
+      opacity: 0.5;
+    }
+  }
+
+  @keyframes twinkle-2 {
+    20% {
+      transform: scale(0.5);
+      opacity: 0.5;
+    }
+  }
+
+  #back {
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(black, #000099, #66c2ff, #ffcccc, #ffeee6);
+  }
+
+  .star-1 {
+    margin-top: 15%;
+    margin-left: 60%;
+    animation-name: twinkle-1;
+    animation-duration: 2s;
+  }
+
+  .star-2 {
+    margin-top: 25%;
+    margin-left: 25%;
+    animation-name: twinkle-2;
+    animation-duration: 1s;
+  }
+  .star-3 {
+    margin-top: 8%;
+    margin-left: 11%;
+    animation-name: twinkle-1;
+    animation-duration: 1s;
+  }
+
+  .star-4 {
+    margin-top: 14%;
+    margin-left: 55%;
+    animation-name: twinkle-2;
+    animation-duration: 1s;
+  }
+  .star-5 {
+    margin-top: 11%;
+    margin-left: 80%;
+    animation-name: twinkle-1;
+    animation-duration: 2s;
+  }
+
+  .star-6 {
+    margin-top: 5%;
+    margin-left: 95%;
+    animation-name: twinkle-2;
+    animation-duration: 4s;
+  }
+  .star-7 {
+    margin-top: 20%;
+    margin-left: 60%;
+    animation-name: twinkle-1;
+    animation-duration: 1s;
+  }
+
+  .star-8 {
+    margin-top: 1%;
+    margin-left: 15%;
+    animation-name: twinkle-2;
+    animation-duration: 1s;
+  }
+
+  /* #star5 {
+    margin: 50px auto;
+    position: absolute;
+    animation-name: fugaz;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes fugaz{
+    0% {
+      top: 0%;
+      right: 20%;
+    }
+    50% {
+      top: 100%;
+      right:90%;
+      
+    }
+    100% {
+      top: 0px;
+    }} */
+    #star-5 {
+        width: 6px;
+        height: 6px;
+        margin: auto;
+        position: absolute;
+        border-radius: 50%;
+        background:       white;
+    
+        animation-name: bounce;
+        animation-duration: 18s;
+        animation-iteration-count: infinite;
+      }
+    
+      @keyframes bounce{
+        0% {
+          top: 0%;
+          right:50%
+        }
+       
+        100% {
+          top: 100%;
+          right:30%;
+        }
+      }
+      #star-6 {
+        width: 6px;
+        height: 6px;
+        margin: -2%;
+        position: absolute;
+        border-radius: 50%;
+        background:       white;
+    
+        animation-name: bounce1;
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
+      }
+    
+      @keyframes bounce1{
+       0%{
+        display: none;
+    }
+        20% {
+          top: 0%;
+          right:90%
+        }
+       
+        100% {
+          top: 100%;
+          right:40%;
+        }
+      }
+      #star-7 {
+        width: 6px;
+        height: 6px;
+        margin: auto;
+        position: absolute;
+        border-radius: 50%;
+        background:       white;
+    
+        animation-name: bounce;
+        animation-duration: 18s;
+        animation-iteration-count: infinite;
+      }
+    
+      @keyframes bounce{
+        0% {
+          top: 0%;
+          right:50%
+        }
+       
+        100% {
+          top: 100%;
+          right:30%;
+        }
+      }
+      #star-8 {
+        width: 6px;
+        height: 6px;
+        margin: -2%;
+        position: absolute;
+        border-radius: 50%;
+        background:       white;
+    
+        animation-name: bounce1;
+        animation-duration: 35s;
+        animation-iteration-count: infinite;
+      }
+    
+      @keyframes bounce1{
+       0%{
+        display: none;
+    }
+        5% {
+          top: 0%;
+          right:80%
+        }
+       
+        100% {
+          top: 100%;
+          right:70%;
+        }
+      }
+      button {
+        font-family: 'Roboto Condensed', sans-serif;  
+        font-size: 25px;
+        transition-duration: 0.4s;
+        width: 220px;
+        height: 50px;
+        border: none;
+        outline: none;
+        color: black;
+        background-color: orange;
+        cursor: pointer;
+        position: relative;
+        z-index: 0;
+        border-radius: 10px;
+      }
+      
+      button:before {
+        content: '';
+        background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+        position: absolute;
+        top: -2px;
+        left:-2px;
+        background-size: 400%;
+        z-index: -1;
+        filter: blur(5px);
+        width: calc(100% + 4px);
+        height: calc(100% + 4px);
+        animation: glowing 20s linear infinite;
+        opacity: 0;
+        transition: opacity .3s ease-in-out;
+        border-radius: 10px;
+      }
+      
+      /* button:active {
+        color: #000
+      } */
+      
+      button:active:after {
+        background: transparent;
+      }
+      
+      button:hover:before {
+        opacity: 1;
+      }
+      
+      button:after {
+        z-index: -1;
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: rgb(248, 245, 203);
+        left: 0;
+        top: 0;
+        border-radius: 10px;
+      }
+      
+      @keyframes glowing {
+        0% { background-position: 0 0; }
+        50% { background-position: 400% 0; }
+        100% { background-position: 0 0; }
+      }
+      .light #back {
+          position: fixed;
+          padding: 0;
+          margin: 0;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+        }
+        .light{
+          background-image: linear-gradient(360deg,orange, rgb(105, 0, 105),rgb(92, 0, 128), rgb(0, 0, 168), rgb(0, 0, 78),black);
+
+        }
+        .light .titulo {
+          color: gold !important;
+        }
+      
