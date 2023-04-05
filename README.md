@@ -4,7 +4,7 @@ A little and simple project just made to play around with CSS and HTML. Don't fo
 
 
 #### Website
-You can visit it [Here][https://dpenedo.github.io/animacion-estrellas]
+You can visit it [Here](https://dpenedo.github.io/animacion-estrellas)
 
 #### Features
 
